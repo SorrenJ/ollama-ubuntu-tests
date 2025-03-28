@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.post("/", (req, res) => {
+app.post("/fetch-ec2", (req, res) => {
     res.json({ message: "Hello from the Ollama EC2 instance!" });
 });
 

@@ -16,7 +16,7 @@ const app = express();
 // Fetch EC2 data every 10 seconds
 // setInterval(fetchAndLogEC2Data, 10000);
 
-app.get("/", async (req, res) => {
+app.get("/fetch-ec2", async (req, res) => {
     console.log("Received request to /fetch-ec2"); 
     try {
         const response = await axios.get("http://13.59.152.110:8080/");
